@@ -53,7 +53,7 @@ Dette er et standardformat som indikerer at identifikatorverdien er en URI eller
 
 ### Hvordan finne OID
 
-1. Gå til [Helsedirektoratets Kodeverk i standarder](https://www.helsedirektoratet.no/standarder/kodeverk-i-standarder)
+1. Gå til [Helsedirektoratets Kodeverk i standarder](https://finnkode.helsedirektoratet.no/adm/collections)
 2. Finn ditt kodeverk i listen
 3. OID-en er oppgitt i kolonnen "OID" eller i detaljvisningen
 4. Standard mønster: `2.16.578.1.12.4.1.1.[kodeverksnummer]`
