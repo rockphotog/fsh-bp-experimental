@@ -170,23 +170,6 @@ Legg til definisjoner for å gi mer kontekst:
   * ^definition = "Negativt svar - avkreftelse"
 ```
 
-## Vanlige feil å unngå
-
-1. ❌ **Feil OID-format:** `"2.16.578.1.12.4.1.1.1101"` 
-   - ✅ **Riktig:** `"urn:oid:2.16.578.1.12.4.1.1.1101"`
-
-2. ❌ **Manglende identifier.system**
-   - ✅ **Alltid inkluder:** `* ^identifier.system = "urn:ietf:rfc:3986"`
-
-3. ❌ **Feil publisher:** `"HL7 Norge"`
-   - ✅ **Riktig:** `"Helsedirektoratet"`
-
-4. ❌ **Feil URL-struktur:** `"http://hl7.no/fhir/CodeSystem/1101"`
-   - ✅ **Riktig:** `"http://helsedir.no/fhir/CodeSystem/no-kodeverk-1101"`
-
-5. ❌ **Blanding av Id og navn-konvensjoner**
-   - ✅ **Konsistent bruk av bindestrek i Id, PascalCase i navn**
-
 ## Bruk i ValueSets
 
 For å referere til kodeverket i et ValueSet:
@@ -213,19 +196,6 @@ Eller for å inkludere spesifikke koder:
 - [FHIR CodeSystem dokumentasjon](https://www.hl7.org/fhir/codesystem.html)
 - [OID Registry for Norge](https://volven.no)
 - [FSH School - CodeSystem](https://fshschool.org/docs/sushi/codeSystem/)
-
-## Sjekkliste for nye kodeverk
-
-- [ ] Funnet korrekt kodeverksnummer fra Helsedirektoratet
-- [ ] Funnet korrekt OID for kodeverket
-- [ ] Brukt riktig navnekonvensjon (PascalCase for navn, kebab-case for Id)
-- [ ] Satt `identifier.system = "urn:ietf:rfc:3986"`
-- [ ] Satt `identifier.value = "urn:oid:[OID]"` med korrekt OID
-- [ ] Satt `url` til `http://helsedir.no/fhir/CodeSystem/no-kodeverk-[nummer]`
-- [ ] Satt `publisher = "Helsedirektoratet"`
-- [ ] Inkludert alle relevante koder med display-tekster
-- [ ] Validert FSH-syntaks med SUSHI
-- [ ] Testet at kodeverket bygger korrekt i IG
 
 ## Eksempler på andre kodeverk
 
