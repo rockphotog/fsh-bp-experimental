@@ -1,6 +1,6 @@
 # Hvordan lage FSH for CodeSystem fra Helsedirektoratets Kodeverk i standarder
 
-Denne guiden forklarer hvordan man oppretter FSH-filer for CodeSystem basert på kodeverk fra Helsedirektoratets "[Kodeverk i standarder](https://www.helsedirektoratet.no/standarder/kodeverk-i-standarder)".
+Denne guiden forklarer hvordan man oppretter FSH-filer for CodeSystem basert på kodeverk fra Helsedirektoratets "[Kodeverk i standarder](https://finnkode.helsedirektoratet.no/adm/collections)".
 
 ## Oversikt
 
